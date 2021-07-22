@@ -110,42 +110,6 @@ class MobileHomePage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 25, right: 25),
                   child: MobileHomeCard(),
                 )),
-                // Column(
-                //   mainAxisAlignment: MainAxisAlignment.end,
-                //   children: [
-                //     Padding(
-                //       padding: const EdgeInsets.only(
-                //         left: 20,
-                //         bottom: 20,
-                //       ),
-                //       child: Row(
-                //         mainAxisAlignment: MainAxisAlignment.end,
-                //         children: [
-                //           InkWell(
-                //             onTap: () {
-                //               html.window
-                //                   .open('https://ErfanRht.GitHub.io', '_blank');
-                //             },
-                //             child: Text(
-                //               ' Erfan Rahmati ',
-                //               style: GoogleFonts.rubik(
-                //                   color: kPrimaryColor,
-                //                   fontSize: 11.0,
-                //                   fontWeight: FontWeight.w800),
-                //             ),
-                //           ),
-                //           Text(
-                //             'Copyright ©2021 All rights reserved | This site is developed by ',
-                //             style: GoogleFonts.rubik(
-                //                 color: Colors.grey,
-                //                 fontSize: 10.0,
-                //                 fontWeight: FontWeight.w700),
-                //           ),
-                //         ],
-                //       ),
-                //     )
-                //   ],
-                // )
               ],
             ),
           ),
