@@ -1,0 +1,43 @@
+name: ghods
+description: Ghods High School Website.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get: ^4.1.4
+  flip_card: ^0.5.0
+  http: ^0.13.3
+  fl_chart: ^0.36.2
+  google_fonts: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/bodyBG.png
+
+  fonts:
+     - family: iran_sans
+       fonts:
+         - asset: assets/fonts/IRAN-Sans-Regular.ttf
+     - family: BYekan
+       fonts:
+         - asset: assets/fonts/BYekan.ttf
+     - family: Far-Yekan
+       fonts:
+         - asset: assets/fonts/Far_Yekan.ttf

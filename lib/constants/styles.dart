@@ -1,0 +1,1 @@
+double defaultButtonWitdh = 300;

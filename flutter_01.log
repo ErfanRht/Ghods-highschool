@@ -1,0 +1,65 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+StdinException: StdinException: Error setting terminal echo mode, OS Error: The handle is invalid.
+, errno = 6
+
+```
+#0      Stdin.echoMode= (dart:io-patch/stdio_patch.dart:84:7)
+#1      AnsiTerminal.singleCharMode= (package:flutter_tools/src/base/terminal.dart:254:13)
+#2      TerminalHandler.setupTerminal (package:flutter_tools/src/resident_runner.dart:1549:15)
+#3      RunCommand.runCommand.<anonymous closure> (package:flutter_tools/src/commands/run.dart:632:15)
+#4      _rootRunUnary (dart:async/zone.dart:1362:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:1265:19)
+#6      _FutureListener.handleValue (dart:async/future_impl.dart:152:18)
+#7      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:704:45)
+#8      Future._propagateToListeners (dart:async/future_impl.dart:733:32)
+#9      Future._complete (dart:async/future_impl.dart:530:7)
+#10     _SyncCompleter.complete (dart:async/future_impl.dart:57:12)
+#11     _ResidentWebRunner.attach (package:flutter_tools/src/isolated/resident_web_runner.dart:844:26)
+<asynchronous suspension>
+#12     asyncGuard.<anonymous closure> (package:flutter_tools/src/base/async_guard.dart:111:24)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.0.5, on Microsoft Windows [Version 10.0.19043.985], locale en-US)
+    • Flutter version 2.0.5 at C:\Users\MasterMind\Erfan\flutter
+    • Framework revision adc687823a (7 weeks ago), 2021-04-16 09:40:20 -0700
+    • Engine revision b09f014e96
+    • Dart version 2.12.3
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.3)
+    • Android SDK at C:\Users\MasterMind\AppData\Local\Android\sdk
+    • Platform android-30, build-tools 30.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 51.0.1
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] VS Code, 64-bit edition (version 1.56.2)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Flutter extension version 3.22.0
+
+[✓] Connected device (2 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 90.0.4430.212
+    • Edge (web)   • edge   • web-javascript • Microsoft Edge 91.0.864.37
+
+• No issues found!
+```

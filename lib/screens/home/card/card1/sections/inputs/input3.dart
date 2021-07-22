@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+import 'package:ghods/constants/colors.dart';
+import 'package:ghods/controllers/card1_controller.dart';
+
+class PCInput extends StatelessWidget {
+  final Card1Controller card1Controller = Get.put(Card1Controller());
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<Card1Controller>(
+      builder: (state) => TextField(
+        enabled: state.step == 2,
+        textAlign: TextAlign.right,
+        decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderRadius: const BorderRadius.all(
+                const Radius.circular(15.0),
+              ),
+            ),
+            prefixIcon: const Icon(Icons.local_post_office),
+            errorText: state.input3Error ? state.input3ErrorText : null,
+            hintStyle: TextStyle(
+                color: state.input3HintColor,
+                fontWeight: FontWeight.w700,
+                fontSize: 15),
+            labelStyle: TextStyle(
+                color: state.input3LableColor,
+                fontWeight: FontWeight.w700,
+                fontSize: 15),
+            counterText: '',
+            labelText: 'کدپستی',
+            hintText: 'لطفا کدپستی محل سکونت خود را وارد کنید'),
+        maxLength: 10,
+        onTap: () {
+          Get.find<Card1Controller>()
+              .updateInput3(newHintColor: kPrimaryColor, newError: false);
+        },
+        onChanged: (String changedText) {
+          Get.find<Card1Controller>().updateInput3(newText: changedText);
+        },
+        style: TextStyle(
+            color: kPrimaryColor, fontWeight: FontWeight.w700, fontSize: 15),
+        keyboardType: TextInputType.number,
+        inputFormatters: <TextInputFormatter>[
+          FilteringTextInputFormatter.digitsOnly
+        ],
+      ),
+    );
+  }
+}

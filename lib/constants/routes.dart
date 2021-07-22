@@ -1,0 +1,1 @@
+const home_route = '/';
