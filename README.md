@@ -15,7 +15,7 @@
 
 [more screenshot...](./screenshots)
 
-<b>⚙️ Things I used in this project: </b>
+<b>⚙️ Technologies I used in this project: </b>
   	<ul>
   	    <li><b> FrontEnd: </b></li>
             <ul>
