@@ -44,7 +44,7 @@ This project is licensed under the [Apache-2.0 License](https://github.com/Erfan
 
 ## Author
 
-This Flutter project is developed by [Erfan Rahmati](https://github.com/ErfanRht).
+This project is developed by [Erfan Rahmati](https://github.com/ErfanRht).
 
 ---
 
